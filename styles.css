@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: auto;
+    background-image: url(./fondopc1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(3, 26, 3); 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image {
+    margin: 0;
+    width: 180px;
+    
+}
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 15px #ffff00;
+    color: #ffff;
+    font-family: 'Rock Salt', cursive;
+    animation: title 1s infinite;
+}
+@keyframes title {
+    50% {
+    text-shadow: 0 0 15px #ffff;
+    color: #ffff00;
+    }
+}
+hr {
+    width: 90%;
+    margin: 1rem;
+    color: white;
+}
+main {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.finder-character {
+    width: 30rem;
+    height: 1rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: rgba(180, 255, 230, 0.733);
+    padding: 1rem;
+    font-family: 'Contrail One', sans-serif;
+}
+.container-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/*Se acomoda a el espacio de la tarjeta automaticamente*/
+    
+}
+.card-character {
+    width: 15rem;
+    height: 25rem;
+    background-color: rgba(71, 11, 83, 0.952);
+    border-radius: 15px;
+    border: solid white;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+.card-character:hover {
+    transform: scale(1.05);
+}
+.card-character > img {
+    width: 70%;
+    height: 55%;
+    align-self: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.card-character > .description-card {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description-card > h2 {
+    text-align: center;
+    color: #ffbb00;
+    text-shadow: 0 0 15px #fff;
+    font-family: 'Contrail One', sans-serif;
+    font-size: 30px;
+}
+
+.status {
+    color: white;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 25px;
+}
+.species {
+    color: greenyellow;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 25px;
+    
+}
+.gender {
+    color: aquamarine;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 25px;
+}
+footer {
+    width: 100%;
+    height: 6rem;
+    background: rgb(248,250,238);
+    background: linear-gradient(0deg, rgba(248,250,238,1) 0%, rgba(169,202,85,1) 40%, rgba(95,172,74,1) 66%, rgba(28,143,69,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+footer img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 3px;
+}
+footer p {
+    align-self: center;
+    font-family: 'Contrail One', sans-serif;
+    color: white;
+}
